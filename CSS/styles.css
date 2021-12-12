@@ -1,0 +1,212 @@
+/* Color Pallets */
+/* https://coolors.co/fb3640-7392b7-1d3461-b4dc7f-ffffff-13213f
+  1. #FB3640
+  2. #7392B7
+  3. #1D3461
+  4. #13213F
+  5. #B4DC7F
+  6. #FFFFFF */
+
+/* https://coolors.co/e8989c-afbbcb-5d79b1-cedfba-CCCCCC-1a2437
+  1. #e8989c
+  2. #afbbcb
+  3. #5d79b1
+  4. #cedfba
+  5. #1a2437
+  6. #CCCCCC */
+
+/* https://coolors.co/e63946-f1faee-a8dadc-77abbd-457b9d-1d3557
+  1. #1d3557
+  2. #457b9d
+  3. #77abbd
+  4. #a8dadc
+  5. #f1faee
+  6. #e63946 */
+
+/*  ? Remember
+    ? Project thumbnails are 600px to be 300. 
+    ? Background images are 1400px to 2000px to be half of it.
+    ? Generic fonts are
+    ? serif (serif)
+    ? san-serif (san-serif)
+    ? cursive (script or decorative fonts)
+    ? fantazy (decorative fonts)
+    ? monospace (monospace fonts)
+    ? */
+
+/*-------------------------------
+Imports
+-------------------------------*/
+@font-face {
+  font-family: "poetsen";
+  src: url(../fonts/English/poetsen/PoetsenOne-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "cabin";
+  src: url(../fonts/English/cabin/CabinSketch-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "lalezar";
+  src: url(../fonts/Lalezar/Lalezar-Regular.ttf) format("opentype");
+}
+
+/*-------------------------------
+Global
+-------------------------------*/
+* {
+  padding: 8px 0 8px 8px;
+  margin: 0;
+}
+
+html,
+main,
+h3{
+  padding: 0;
+}
+
+body {
+  color: #1a2437;
+  font-family: "Outfit", sans-serif;
+  padding: 0;
+}
+.content-wrap {
+  width: 60vw;
+  margin: 0 30%;
+}
+
+p {
+  line-height: 1.26;
+}
+
+a {
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0px;
+}
+
+a:hover {
+  /* color: #fff; */
+  color: #f1faee;
+  transform: translateY(-2px);
+}
+
+/*-------------------------------
+About / Profile
+-------------------------------*/
+
+header {
+  /* background-color: #1a2437; */
+  background-color: #1d3557;
+  color: #f1faee;
+  /* color: #fff; */
+}
+
+h1 {
+  font-family: "poetsen";
+  font-size: 2.5em;
+}
+
+header p {
+  width: 60%;
+}
+
+h2 {
+  font-family: "cabin";
+  font-size: 1.5em;
+}
+
+.title {
+  font-family: "poetsen";
+  font-style: 2em;
+}
+
+/* 
+-------------------------------
+Projects / Portfolio
+-------------------------------
+*/
+
+.projects {
+  /* background-color: #e8989c; */
+  /* background-color: #9AD8FE; */
+  background-color: #80b7c9;
+}
+
+.projects a {
+  /* color:#fff; */
+  color: #f1faee;
+  background-color: #1a2437;
+
+  padding: 8px;
+  margin: 6px;
+  border-radius: 6px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+
+  text-decoration: none;
+}
+
+/* 
+-------------------------------
+Work Experience
+-------------------------------
+*/
+
+.work {
+  /* background-color: #cedfba; */
+  /* background-color: #80B7C9; */
+  background-color: #a7dbc7;
+}
+
+.work-item {
+  display: flex;
+}
+
+.job-summary,
+.job-info-list,
+.job-info-list-p,
+.job-info-list-li {
+  padding: 0;
+}
+
+.job-info-list-li {
+  list-style: inside;
+}
+
+/* 
+-------------------------------
+Education & Certifications
+-------------------------------
+*/
+
+.edu {
+  /* background-color: #cccccc; */
+  background-color: #9ad8fe;
+}
+
+.course-cert {
+  /* background-color: #eae29a; */
+  background-color: #f1faee;
+}
+
+/* 
+-------------------------------
+Contact info & Social media
+-------------------------------*/
+
+footer {
+  /* background-color: #E63946; */
+  background-color: #711920;
+  color: #f1faee;
+  /* color: #fff; */
+}
+
+footer a {
+  color: #9ad8fe;
+}
+
+footer a:visited {
+  color: inherit;
+}
