@@ -265,10 +265,6 @@ footer a {
   overflow-wrap: anywhere;
 }
 
-footer a:visited {
-  color: inherit;
-}
-
 
 /*
 ----------------------------------
@@ -288,6 +284,7 @@ footer a:visited {
   background-color: #f1faee;
   color: #000;
   opacity: 0.7;
+  -webkit-color: #000;
   border-radius: 12px;
   padding: 6px;
   text-decoration: none;
