@@ -80,6 +80,34 @@ body {
   padding: 0;
 }
 
+/*
+----------------------------------
+* FlexBox Styles
+----------------------------------
+*/
+main > *{
+  display: flex;
+  flex-flow: column Wrap;
+  justify-content: flex-start; /* Space-evenly is both [space-around & space-between]. */
+  align-items: baseline;
+  Align-Content: center; /* For the whole content, not just items. */
+}
+
+main > * >{
+
+  flex-grow: 10; /* To give priority to an element to grow before others and based on what proportion. */
+  flex-shrink: 0; /* To give priority to an element to shrink before others and based on what proportion. */
+  order: 0; /* Orders a child element based on the main axis. Note, you can't replace an element's order with another, you need to assign another position for that element. */
+  flex-basis: Auto; /* Determines dimension of the element based on the main axis. Note, it doesn't work with position absolute or the parent element. Also it respects max-width property. */
+  align-self: Auto; /* To control the position or alignment of an element. */
+  /* flex: [flex-grow] [flex-shrink] [flex-basis] 0 1 Auto; */
+    /* -> The flex property include these values
+      - flex: number without any unit; => represtents the proportion of flex items.
+      - flex: number with any unit; => the first item will take this number of available space. After that, the rest of the available space will be shared out according to the proportion units.
+      - flex: auto; => This has a very interesting effect, which you'll see if you try resizing your browser window width. The items will take up as much space as they can, and sit as many on the same line as they can, but when they can no longer fit comfortably on the same line, they'll drop down to create new lines. */
+}
+/* ------------------------------------------- */
+
 p {
   line-height: 1.26;
 }
@@ -141,6 +169,18 @@ h2 {
   opacity: 0.5;
 }
 
+/*
+----------------------------------
+* FlexBox Styles
+----------------------------------
+*/
+
+.breif{
+  flex-grow: 1;
+  flex-basis: 380px;
+}
+
+
 /* 
 ----------------------------------
 -------------------------------
@@ -197,12 +237,10 @@ h2 {
 }
 
 .work-item {
-  /* Grid properties */
-  display: grid;
-  /* grid-template-columns: 1.5fr 2fr; */
-  /* The following rule creates columns as many as needed, as long as they have a minimum width of 13em, and can't be more than 1fr. This makes the grid responsive.*/
+  /* display: grid;
+  /* The following rule creates columns as many as needed, as long as they have a minimum width of 13em, and can't be more than 1fr. This makes the grid responsive. *!
   grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
-  grid-gap: 6px;
+  grid-gap: 6px; */
 
   padding: 0;
   margin-top: 2em;
