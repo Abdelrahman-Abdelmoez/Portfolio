@@ -205,7 +205,8 @@ h2 {
   display: grid;
   /* grid-template-columns: 1.5fr 2fr; */
   /* The following rule creates columns as many as needed, as long as they have a minimum width of 13em, and can't be more than 1fr. This makes the grid responsive.*/
-  grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* My Problem was that I Used "em" instead of "px" really weird*/
   grid-gap: 6px;
 
   padding: 0;

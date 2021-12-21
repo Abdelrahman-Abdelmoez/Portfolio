@@ -20,10 +20,11 @@ The first step of creating my own brand and working remotely.
 
 ### Urgent
 
-- [ ] Make the Page more responsive.
-  - [ ] **Responsive text**: Add CSS property `font-size: clamp(min, ideal, max);` to all text including `h1, p, a` and others[^1].
+- [ ] Make the Page more fluid.
+  - [ ] **Fluid text**: Add CSS property `font-size: clamp(min, ideal, max);` to all text including `h1, p, a` and others[^1]. (You can use rem as a unit and add calculations if you want).
   - [ ] Test `work-item` class with `flexbox` instead of `grid` to be responsive. (Also add `flex Grow` and `flow row`).
-  - [ ] You could make the whole page `flex` with main sections as `flex items` to be centered and take as much width as possible.
+  - [ ] Control paragraph width with `ch` unit.
+  - [ ] Control padding and margin with `em` unit.
 
 ### Complementary
 
@@ -50,5 +51,6 @@ The first step of creating my own brand and working remotely.
 - [x] Add a website, and other contacting info.
   - [x] Add twitter and edit your profile.
   - [x] Add facebook and edit your profile.
+  - [ ] You could make the whole page `flex` with main sections as `flex items` to be centered and take as much width as possible. (When I did that, it became kinda messed up. I think grid is better.)
 
 [^1]: See this video [min(), max(), and clamp() are CSS magic!](https://www.youtube.com/watch?v=U9VF-4euyRo) by [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) for more info.
